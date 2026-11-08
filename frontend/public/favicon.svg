@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#3FA34D"/>
+  <rect width="32" height="32" fill="#2F6FB3"/>
+  <rect x="32" width="32" height="32" fill="#3FA34D"/>
+  <rect y="32" width="32" height="32" fill="#3FA34D"/>
+  <rect x="32" y="32" width="32" height="32" fill="#3FA34D"/>
+  <path stroke="#fff" stroke-width="1.5" d="M32 2v60M2 32h60"/>
+  <text x="16" y="24" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="20" font-weight="800" fill="#fff">I</text>
+  <text x="48" y="24" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="20" font-weight="800" fill="#fff">F</text>
+  <text x="16" y="52" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="20" font-weight="800" fill="#fff">T</text>
+  <text x="48" y="52" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="20" font-weight="800" fill="#fff">S</text>
+  <text x="32" y="38" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="26" font-weight="900" fill="#111">2</text>
+</svg>

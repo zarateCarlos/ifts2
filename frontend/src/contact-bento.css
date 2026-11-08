@@ -1,0 +1,116 @@
+/* Contacto — bento desktop/tablet; columna en mobile */
+.contact-bento {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.contact-bento__card {
+  background: #f7f4ef;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+}
+
+.contact-bento__card h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.12rem;
+}
+
+.contact-bento__address {
+  margin: 0 0 0.55rem;
+}
+
+.contact-bento__list {
+  margin: 0;
+  padding-left: 1.05rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-bento__social.social-icons,
+.contact-bento__social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.contact-bento__social .social-icons__link {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.contact-bento__card--mapa {
+  padding: 0.75rem;
+}
+
+.contact-bento__card--mapa .map-block__frame {
+  min-height: 14rem;
+  height: clamp(14rem, 38vw, 22rem);
+}
+
+@media (min-width: 700px) {
+  .contact-bento {
+    grid-template-columns: 1.35fr 0.9fr;
+    grid-template-areas:
+      'sede redes'
+      'bedelia redes'
+      'mapa mapa';
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .contact-bento__card--sede {
+    grid-area: sede;
+  }
+
+  .contact-bento__card--redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .contact-bento__card--bedelia {
+    grid-area: bedelia;
+  }
+
+  .contact-bento__card--mapa {
+    grid-area: mapa;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact-bento {
+    grid-template-columns: 1.4fr 0.85fr 0.95fr;
+    grid-template-areas:
+      'sede redes bedelia'
+      'mapa mapa mapa';
+  }
+}
+
+.comunidad-area {
+  scroll-margin-top: calc(var(--header-h) + 0.75rem);
+}
+
+.comunidad-area__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+  color: var(--color-ink);
+}
+
+.activity-card--text-only {
+  grid-template-columns: 1fr;
+}
+
+.activity-card--text-only .activity-card__copy {
+  min-height: 0;
+}
